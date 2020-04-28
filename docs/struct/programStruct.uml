@@ -1,0 +1,46 @@
+@startuml
+skinparam linetype ortho
+skinparam monochrome reverse
+skinparam shadowing false
+' The main class of the program.
+class StartShogi 
+
+' Graphics UI handling
+interface UIHandler
+{
++ void plugUI(UIPlugger systemPlug)
++ void showBoard()
++ void println()
+}
+class TermUI 
+StartShogi --> UIHandler
+TermUI -|> UIHandler
+
+' Game logic
+class LogicHandler
+class GameRules
+LogicHandler -> GameRules
+StartShogi --> LogicHandler
+
+' JSON processing classes
+class ShogiParser
+{
++  void parse()
++ void plugSelectors()
+}
+interface ShogiSelector
+{
++ void onObject()
+}
+LogicHandler -|>ShogiSelector
+GameRules -|> ShogiSelector
+ShogiBot -|> ShogiSelector
+ShogiParser -> ShogiSelector
+
+' AI
+class ShogiBot
+{
++ chooseBestState()
+}
+StartShogi->ShogiBot
+@enduml

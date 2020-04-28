@@ -1,0 +1,95 @@
+{
+	"title" : "Lion Shogi",
+	"board" :
+	{
+		"width" : 3,
+		"height" : 4,
+		"placement" :
+		[
+			"cab",
+			"0d0",
+			"040",
+			"213"
+		]
+	},
+	"bot" :
+	{
+		"layers" : 6
+	},
+
+	"pieces" :
+	[
+		{
+			"char_0" : "1",
+			"char_1" : "a",
+			"byteKey" : 1,
+			"value" : 1000,
+			"show" : "L",
+			"piece_name" : "lion",
+			"placement" :
+			[
+				"XXX",
+				"XOX",
+				"XXX"
+			]
+		},
+		{
+			"char_0" : "2", 
+			"char_1" : "b",
+			"byteKey" : 2,
+			"show" : "E",
+			"value" : 3,
+			"piece_name" : "elephant",
+			"placement" :
+			[
+				"-X-",
+				"XOX",
+				"-X-"
+			]
+		},
+		{
+			"char_0" : "3",
+			"char_1" : "c",
+			"byteKey" : 3,
+			"show" : "G",
+			"value" : 4,
+			"piece_name" : "giraffe",
+			"placement" :
+			[
+				"X-X",
+				"-O-",
+				"X-X"
+			]
+		},
+		{
+			"char_0" : "4",
+			"char_1" : "d",
+			"byteKey" : 4,
+			"show" : "C",
+			"value" : 1, 
+			"piece_name" : "chick",
+			"promotion" : 5, 
+			"placement" :
+			[
+				"-X-",
+				"-O-",
+				"---"
+			]
+		},
+		{
+			"char_0" : "5",
+			"char_1" : "e",
+			"byteKey" : 5,
+			"show" : "R",
+			"value" : 5,
+			"piece_name" : "rooster",
+			"demote" : 4,
+			"placement" :
+			[
+				"XXX",
+				"XOX",
+				"-X-"
+			]
+		}
+	]
+}

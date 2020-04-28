@@ -1,0 +1,250 @@
+{
+	"title" : "Modern Shogi",
+	"board" :
+	{
+		"width" : 9,
+		"height" : 9,
+		"placement" :
+		[
+			"GFEDADEFG",
+			"0B00000C0",
+			"HHHHHHHHH",
+			"000000000",
+			"000000000",
+			"000000000",
+			"hhhhhhhhh",
+			"0c00000b0",
+			"gfedadefg"
+
+		]
+	},
+	"bot" :
+	{
+		"layers" : 4
+	},
+
+	"pieces" :
+	[
+		{
+			"char_0" : "a",
+			"char_1" : "A",
+			"byteKey" : 1,
+			"value" : 30,
+			"show" : "K",
+			"piece_name" : "King",
+			"placement" :
+			[
+				"XXX",
+				"XOX",
+				"XXX"
+			]
+		},
+		{
+			"char_0" : "b",
+			"char_1" : "B",
+			"byteKey" : 2,
+			"value" : 4,
+			
+			"show" : "R",
+			"piece_name" : "Rook",
+			"promotion" : 9,
+			"placement" :
+			[
+				"-/-",
+				"/O/",
+				"-/-"
+			]
+		},
+		{
+			"char_0" : "c",
+			"char_1" : "C",
+			"byteKey" : 3,
+			"value" : 5,
+			
+			"show" : "B",
+			"piece_name" : "Bishop",
+			"promotion" : 10,
+			"placement" :
+			[
+				"/-/",
+				"-O-",
+				"/-/"
+			]
+		},
+		{
+			"char_0" : "d",
+			"char_1" : "D",
+			"byteKey" : 4,
+			"value" : 8,
+			
+			"show" : "G",
+			"piece_name" : "Gold general",
+			"placement" :
+			[
+				"XXX",
+				"XOX",
+				"-X-"
+			]
+		},
+		{
+			"char_0" : "e",
+			"char_1" : "E",
+			"byteKey" : 5,
+			"value" : 6,
+			
+			"show" : "S",
+			"piece_name" : "Silver general",
+			"promotion" : 12,
+			"placement" : 
+			[
+				"XXX",
+				"-O-",
+				"X-X"
+			]
+		},
+		{
+			"char_0" : "f",
+			"char_1" : "F",
+			"byteKey" : 6,
+			"value" : 4,
+			"promotion" : 11,
+			"promotion_dist" : 3,
+			
+			"show" : "N",
+			"piece_name" : "Knight",
+			"placement" :
+			[
+				"X-X",
+				"---",
+				"-O-"
+			]
+		},
+		{
+			"char_0" : "g",
+			"char_1" : "G",
+			"byteKey" : 7,
+			"value" : 3,
+			"promotion" : 14,
+			
+			"show" : "L",
+			"piece_name" : "Lance",
+			"placement" :
+			[
+				"-/-",
+				"-O-",
+				"---"
+			]
+		},
+		{
+			"char_0" : "h",
+			"char_1" : "H",
+			"byteKey" : 8,
+			"value" : 1,
+			"promotion" : 13,
+			
+			"show" : "P",
+			"piece_name" : "Pawn",
+			"placement" :
+			[
+				"X",
+				"O"
+			]
+		},
+		{
+			"char_0" : "i",
+			"char_1" : "I",
+			"byteKey" : 9,
+			"value" : 6,
+			"demote" : 2,
+			
+			"show" : "D",
+			"piece_name" : "Dragon",
+			"placement" :
+			[
+				"X/X",
+				"/O/",
+				"X/X"
+			]
+		},
+		{
+			"char_0" : "j",
+			"char_1" : "J",
+			"byteKey" : 10,
+			"value" : 6,
+			"demote" : 3,
+			
+			"show" : "H",
+			"piece_name" : "Horse",
+			"placement" :
+			[
+				"/X/",
+				"XOX",
+				"/X/"
+			]
+		},
+		{
+			"char_0" : "k",
+			"char_1" : "K",
+			"byteKey" : 11,
+			"value" : 8,
+			"demote" : 6,
+			
+			"show" : "G",
+			"piece_name" : "Promoted knight",
+			"placement" :
+			[
+				"XXX",
+				"XOX",
+				"-X-"
+			]
+		},
+		{
+			"char_0" : "l",
+			"char_1" : "L",
+			"byteKey" : 12,
+			"demote" : 5,
+			"value" : 8,
+			
+			"show" : "G",
+			"piece_name" : "Promoted silver general",
+			"placement" :
+			[
+				"XXX",
+				"XOX",
+				"-X-"
+			]
+		},
+		{
+			"char_0" : "m",
+			"char_1" : "M",
+			"demote" : 8,
+			"byteKey" : 13,
+			"value" : 8,
+			
+			"show" : "G",
+			"piece_name" : "Promoted pawn",
+			"placement" :
+			[
+				"XXX",
+				"XOX",
+				"-X-"
+			]
+		},
+		{
+			"char_0" : "n",
+			"char_1" : "N",
+			"byteKey" : 4,
+			"value" : 14,
+			
+			"show" : "G",
+			"demote" : 7,
+			"piece_name" : "Promoted lance",
+			"placement" :
+			[
+				"XXX",
+				"XOX",
+				"-X-"
+			]
+		}
+	]
+}

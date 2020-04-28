@@ -1,0 +1,44 @@
+<h1>START SHOGI</h1>
+<h2>Introduction</h2>
+<p>This program is part of Computing Project 3 for CS 1006. It is a Terminal-based (but potentially more flexible) shogi simulator, with primitive AI opponent.</p>
+<h2>Dependencies</h2>
+<p>Software needed:
++ Java 8 or higher
++ An ANSI escape code compatible terminal. Windows cmd will cause printing issues.</p>
+<p>The java program build automation tool Gradle, which will not need to be installed here, will take all software dependencies in charge.</p>
+<h2>How to build/run it</h2>
+<p>Run/ build it like this:
++ UNIX(-like) systems: run startShogi shell script.
++ Windows systems: install <a href="https://www.gentoo.org/">gentoo!</a></p>
+<h2>JSON Script properties</h2>
+<ul>
+<li>board - contains components like board height, width, and piece placement.
+The characters on the board placement array depend on the piece definitions 
+in the piece objects.</li>
+<li>piece - The object for a piece. char0 and char1 are the characters for each player's 
+piece in the board layout array.<ul>
+<li>placement - how a piece can move - X = absolute moveable position, / = makes a 
+line of possible movement in that direction, O - represents the piece. At least one 
+needed in each placement array. A placement array can be of any size.</li>
+</ul>
+</li>
+</ul>
+<h2>In-game commands</h2>
+<ul>
+<li>If no piece selected:<ul>
+<li>y-x (x : position x shown on the board) (y: position y show on board)
+select piece at position y-x. Fails if not your piece.</li>
+<li>c[index]->y-x (y-x position of an empty space) ([index] the index of selected capture piece in capture group)
+drops captured piece no.index to position y-x.</li>
+<li>y-x,y-x (both positions) move piece y-x to position y-x </li>
+<li>quit or exit - exits the game</li>
+<li>forfeit | give up - you forfeit the game</li>
+</ul>
+</li>
+<li>If a piece is selected with y-x command:<ul>
+<li>y-x - moves selected piece to new position.</li>
+<li>cancel - exits selection mode.</li>
+<li>All other commands work the same in this mode.</li>
+</ul>
+</li>
+</ul>
