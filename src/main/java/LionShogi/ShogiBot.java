@@ -135,7 +135,7 @@ public class ShogiBot implements ShogiSelector
 
 		// Loop reward for each capture
 		ArrayList<Byte> captures = rewardState.capturesP1;
-		if (rewardState.P0Turn) captures = rewardState.capturesP1;
+		if (side == 1) captures = rewardState.capturesP0;
 		for (Byte piece: captures)
 			reward += shogiRules.getValue(piece);
 
